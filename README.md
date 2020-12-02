@@ -7,6 +7,12 @@ What will the game engine have?
 ### Entrypoint
 
 What happens when the application is launched?
+For the entry point, the main method was encapsulated inside the engine project called GameEngine. The client will use the Sandbox project for game development.
+
+### Logging
+
+This will be a way to log events so the engine can communicate with the user. The goal is for the application to be the most client-facing possible. Because of that, it is nice to use a color code to differenciate the severity of the messages. It is also good to know where the log is coming from. Because of the extension of this work, an external library is used for printing messages - [spdlog](https://github.com/gabime/spdlog).
+
 
 ### Application Layer
 
