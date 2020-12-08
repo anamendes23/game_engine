@@ -24,6 +24,9 @@ Set up a call back function to pass event data to the Application.
 
 The event system was implemented for application, mouse, key, and window events.
 
+### Precompiled Headers
+
+Have a header file containing all the libraries and precompile them when building the solution. This makes it faster to build the solution.
 
 ### Application Layer
 
