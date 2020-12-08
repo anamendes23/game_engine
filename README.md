@@ -17,6 +17,14 @@ This will be a way to log events so the engine can communicate with the user. Th
 
 The game engine is currently build for Windows only. In order to have the option available to build the application to other platforms, [premake](https://github.com/premake/premake-core) will be used.
 
+### Event System
+
+Application needs to receive events to dispatch them to layers. The Window class will receive these events and communicate with Application class.
+Set up a call back function to pass event data to the Application.
+
+The event system was implemented for application, mouse, key, and window events.
+
+
 ### Application Layer
 
 Code that deals with application lifecycle and events.
