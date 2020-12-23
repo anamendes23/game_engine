@@ -40,6 +40,9 @@ For web, there's a surface layer, not window.
 * Inputs
 * Events
 
+Implementation: using GLFW, because it is cross-platform.
+Window abstraction: use one class per platform. The design was made this way to leave the possibility to use win32 API instead of GLFW for Windows in the future. 
+
 ### Renderer
 
 Renders the graphics on the screen.
