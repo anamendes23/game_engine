@@ -29,7 +29,7 @@ namespace GameEngine {
 		EventCategoryMouseButton = BIT(4)
 	};
 
-#define EVENT_CLASS_TYPE(type) static EventType GetStaticType() { return EventType::type; }\
+#define EVENT_CLASS_TYPE(type) static EventType GetStaticType() { return EventType::##type; }\
 								virtual EventType GetEventType() const override { return GetStaticType(); }\
 								virtual const char* GetName() const override { return #type; }
 
@@ -48,7 +48,7 @@ namespace GameEngine {
 		}
 
 	protected:
-		bool m_Handled = false;
+		bool Handled = false;
 	};
 
 	class EventDispatcher {
@@ -60,6 +60,7 @@ namespace GameEngine {
 
 		template<typename T>
 		bool Dispatch(EventFn<T> func) {
+				
 			if (m_Event.GetEventType() == T::GetStaticType()) {
 
 				m_Event.Handled = func(*(T*)&m_Event);

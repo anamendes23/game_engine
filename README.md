@@ -37,11 +37,13 @@ Code that deals with application lifecycle and events.
 Target for graphics rendering and input events come from.
 For web, there's a surface layer, not window.
 
+Implementation: using GLFW, because it is cross-platform.
+Window abstraction: use one class per platform. The design was made this way to leave the possibility to use win32 API instead of GLFW for Windows in the future. 
+
 * Inputs
 * Events
 
-Implementation: using GLFW, because it is cross-platform.
-Window abstraction: use one class per platform. The design was made this way to leave the possibility to use win32 API instead of GLFW for Windows in the future. 
+Windows generate events, like when the mouse clicks on a point, a key is pressed on the keyboard, etc. The Event and Window layers were created, so now we must link those two. To do that, implement GLFW event callbacks.
 
 ### Renderer
 
