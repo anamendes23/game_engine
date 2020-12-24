@@ -38,6 +38,10 @@ namespace GameEngine {
 	class GAMEENGINE_API Event {
 		friend class EventDispatcher;
 	public:
+		virtual ~Event() = default;
+
+		bool Handled = false;
+
 		virtual EventType GetEventType() const = 0;
 		virtual const char* GetName() const = 0;
 		virtual int GetCategoryFlags() const = 0;
@@ -46,9 +50,6 @@ namespace GameEngine {
 		inline bool IsInCategory(EventCategory category) {
 			return GetCategoryFlags() & category;
 		}
-
-	protected:
-		bool Handled = false;
 	};
 
 	class EventDispatcher {

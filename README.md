@@ -1,5 +1,7 @@
 # Game Engine Series
 
+This project is a combination of following "The Cherno" game engine series on Youtube, along with reading the book "Game Engine Architecture" by Jason Gregory. My goal is to go through all the tutorials and use the book as a theorerical suplement and eventually learn enough to make my own changes to the game engine.
+
 ## Roadmap
 
 What will the game engine have?
@@ -44,6 +46,16 @@ Window abstraction: use one class per platform. The design was made this way to 
 * Events
 
 Windows generate events, like when the mouse clicks on a point, a key is pressed on the keyboard, etc. The Event and Window layers were created, so now we must link those two. To do that, implement GLFW event callbacks.
+
+### Layers
+
+Layers in a game engine is similar to layers in Photoshop, for example. This layer stack will determine the order in which things are drawn on the screen. Layers in a game engine are also applicable to events and update logic.
+
+Possible layers:
+
+* game layer (root)
+* debug layer
+* UI layer
 
 ### Renderer
 
