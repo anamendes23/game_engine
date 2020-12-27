@@ -1,8 +1,7 @@
 #pragma once
 
 #include "GameEngine/Window.h"
-
-#include "GLFW/glfw3.h"
+#include <GLFW/glfw3.h>
 
 namespace GameEngine {
 
