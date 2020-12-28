@@ -57,6 +57,10 @@ Possible layers:
 * debug layer
 * UI layer
 
+### ImGui
+
+ImGui runs through the Game Engine to render things on the screen. This will be implemented to assist debugging the application.
+
 ### Renderer
 
 Renders the graphics on the screen.
