@@ -19,3 +19,5 @@
 #endif
 
 #define BIT(x) (1 << x)
+
+#define GE_BIND_EVENTS_FN(fn) std::bind(&fn, this, std::placeholders::_1)

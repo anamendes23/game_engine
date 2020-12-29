@@ -61,6 +61,8 @@ Possible layers:
 
 ImGui runs through the Game Engine to render things on the screen. This will be implemented to assist debugging the application.
 
+Integrated ImGui with the game engine event system.
+
 ### Renderer
 
 Renders the graphics on the screen.
