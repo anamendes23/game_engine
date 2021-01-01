@@ -48,6 +48,7 @@ namespace GameEngine {
 		virtual std::string ToString() const { return GetName(); }
 
 		inline bool IsInCategory(EventCategory category) {
+			
 			return GetCategoryFlags() & category;
 		}
 	};
@@ -74,6 +75,7 @@ namespace GameEngine {
 	};
 
 	inline std::ostream& operator<<(std::ostream& os, const Event& e) {
+		
 		return os << e.ToString();
 	}
 }

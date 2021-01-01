@@ -128,15 +128,18 @@ namespace GameEngine {
 	}
 
 	void WindowsWindow::Shutdown() {
+		
 		glfwDestroyWindow(m_Window);
 	}
 
 	void WindowsWindow::OnUpdate() {
+		
 		glfwPollEvents();
 		glfwSwapBuffers(m_Window);
 	}
 
 	void WindowsWindow::SetVSync(bool enabled) {
+		
 		if(enabled)
 			glfwSwapInterval(1);
 		else
@@ -146,6 +149,7 @@ namespace GameEngine {
 	}
 
 	bool WindowsWindow::IsVSync() const {
+		
 		return m_Data.VSync;
 	}
 }

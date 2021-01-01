@@ -63,6 +63,10 @@ ImGui runs through the Game Engine to render things on the screen. This will be 
 
 Integrated ImGui with the game engine event system.
 
+### Input Polling
+
+It will be useful to have an input manager that will be used by the client when developing games. With that in mind, Input.h is added to handle the management of all inputs.
+
 ### Renderer
 
 Renders the graphics on the screen.
