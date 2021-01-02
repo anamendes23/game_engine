@@ -5,6 +5,7 @@
 #include "Input.h"
 
 #include <glad/glad.h>
+#include <glm/glm.hpp>
 
 namespace GameEngine {
 

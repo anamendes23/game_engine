@@ -2,7 +2,7 @@
 
 class ExampleLayer : public GameEngine::Layer {
 public:
-	ExampleLayer() : Layer("Example") {}
+	ExampleLayer() : Layer("Example") {	}
 
 	void OnUpdate() override {
 
