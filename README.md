@@ -67,9 +67,15 @@ Integrated ImGui with the game engine event system.
 
 It will be useful to have an input manager that will be used by the client when developing games. With that in mind, Input.h is added to handle the management of all inputs.
 
+### Key and Mouse Codes
+
+Implemented a native key and mouse codes to facilitate implementing other librarins for different platforms in the future.
+
 ### Renderer
 
 Renders the graphics on the screen.
+
+* Maths: this is the first step in building the rendering system. Aiming to have an optmized library quickly, glm will be used instead of creating a math library from scratch.
 
 ### Render API abstraction
 
