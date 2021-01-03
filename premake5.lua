@@ -105,6 +105,7 @@ project "Sandbox"
     includedirs {
         "GameEngine/vendor/spdlog/include",
         "GameEngine/src",
+        "GameEngine/vendor",
         "%{IncludeDir.glm}"
     }
 
