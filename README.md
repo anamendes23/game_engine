@@ -79,7 +79,36 @@ Renders the graphics on the screen.
 
 * Maths: this is the first step in building the rendering system. Aiming to have an optmized library quickly, glm will be used instead of creating a math library from scratch.
 
+This area will hold the render commands and it is platform agnostic. The renderer will be responsible for:
+
+* 2D & 3D Renderer -> forward, deferred, etc.
+* Scene Graph
+* Sorting
+* Culling
+* Materials
+* LOD (Level Of Detail)
+* Animation
+* Camera
+* VFX (Visual Effects) -> like particle system
+* PostFX (Post Effects)
+* Other things (eg. reflections, ambient occlusion)
+
 ### Render API abstraction
+
+For this game engine, OpenGL was chosen as the rendering API for its simplicity and cross-platform compatibility.
+
+This includes implementing the following render primitives:
+
+* Render Context
+* Swap chain
+* Framebuffer
+* Vertex buffer
+* Index buffer
+* Texture
+* Shader
+* States
+* Pipelines
+* Render passes
 
 ### Debugging support
 
