@@ -99,7 +99,9 @@ For this game engine, OpenGL was chosen as the rendering API for its simplicity 
 
 This includes implementing the following render primitives:
 
-* Render Context
+* Render Context:
+- Initially, OpenGL is used for the render context.
+
 * Swap chain
 * Framebuffer
 * Vertex buffer
@@ -129,5 +131,3 @@ Create game objects and modularize them.
 ### File I/O, VFS
 
 ### Build system
-
- 
