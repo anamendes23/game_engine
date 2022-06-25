@@ -23,19 +23,19 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
@@ -592,14 +592,14 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">
-      <Project>{154B857C-0182-860D-AA6E-6C109684020F}</Project>
-    </ProjectReference>
     <ProjectReference Include="vendor\Glad\Glad.vcxproj">
       <Project>{BDD6857C-A90D-870D-52FA-6C103E10030F}</Project>
     </ProjectReference>
+    <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">
+      <Project>{154b857c-0182-860d-aa6e-6c109684020f}</Project>
+    </ProjectReference>
     <ProjectReference Include="vendor\imgui\ImGui.vcxproj">
-      <Project>{C0FF640D-2C14-8DBE-F595-301E616989EF}</Project>
+      <Project>{c0ff640d-2c14-8dbe-f595-301e616989ef}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

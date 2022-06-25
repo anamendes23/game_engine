@@ -2,6 +2,8 @@
 
 This project is a combination of following "The Cherno" game engine series on Youtube, along with reading the book "Game Engine Architecture" by Jason Gregory. My goal is to go through all the tutorials and use the book as a theorerical suplement and eventually learn enough to make my own changes to the game engine.
 
+- [Getting Started](#getting-started)
+    - [Downloading the repository](#downloading-the-repository)
 - [Roadmap](#roadmap)
     - [Entry point](#entrypoint)
     - [Logging](#logging)
@@ -25,6 +27,19 @@ This project is a combination of following "The Cherno" game engine series on Yo
     - [Build system](#build-system)
 - [Usage](#usage)
 
+
+***
+
+## Getting Started
+Visual Studio 2017 or 2019 is recommended, Hazel is officially untested on other development environments whilst we focus on a Windows build.
+
+### Downloading the repository
+
+Start by cloning the repository with `git clone --recursive https://github.com/TheCherno/Hazel`.
+
+If the repository was cloned non-recursively previously, use `git submodule update --init` to clone the necessary submodules.
+
+***
 
 ## Roadmap
 
@@ -159,7 +174,8 @@ Create game objects and modularize them.
 ### Build system
 // TODO: add Build system information
 
----
+***
+
 ## Usage
 
 // TODO: add usage information
