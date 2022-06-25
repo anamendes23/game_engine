@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
 	int a = 5;
 	GE_INFO("Hello! Var={0}", a);
 
-	auto app = GameEngine::CreateApplication();
+	GameEngine::Application* app = GameEngine::CreateApplication();
 	app->Run();
 	delete app;
 }

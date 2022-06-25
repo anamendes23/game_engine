@@ -2,6 +2,30 @@
 
 This project is a combination of following "The Cherno" game engine series on Youtube, along with reading the book "Game Engine Architecture" by Jason Gregory. My goal is to go through all the tutorials and use the book as a theorerical suplement and eventually learn enough to make my own changes to the game engine.
 
+- [Roadmap](#roadmap)
+    - [Entry point](#entrypoint)
+    - [Logging](#logging)
+    - [Premake](#premake)
+    - [Event System](#event-system)
+    - [Precompiled Headers](#precompiled-headers)
+    - [Application Layer](#application-layer)
+    - [Window Layer](#window-layer)
+    - [Layers](#layers)
+    - [ImGui](#imgui)
+    - [Input Polling](#input-polling)
+    - [Key and Mouse Codes](#key-and-mouse-codes)
+    - [Renderer](#renderer)
+    - [Render API abstraction](#render-API-abstraction)
+    - [Debugging support](#debugging-support)
+    - [Scripting language](#scripting-language)
+    - [PreMemory systemsmake](#memory-systems)
+    - [Entity-Component System (ECS)](#entity-Component-system-(ECS))
+    - [Physics](#physics)
+    - [File I/O, VFS](#file-I/O,-VFS)
+    - [Build system](#build-system)
+- [Usage](#usage)
+
+
 ## Roadmap
 
 What will the game engine have?
@@ -127,7 +151,15 @@ Memory allocation and tracking usage.
 Create game objects and modularize them.
 
 ### Physics
+// TODO: add Physics information
 
 ### File I/O, VFS
+// TODO: add File information
 
 ### Build system
+// TODO: add Build system information
+
+---
+## Usage
+
+// TODO: add usage information

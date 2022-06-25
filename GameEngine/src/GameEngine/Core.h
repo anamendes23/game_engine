@@ -11,7 +11,7 @@
 	#define GAMEENGINE_API
 #endif
 #else
-	#error This game engine only supports windows!
+	#error This game engine only supports Windows!
 #endif
 /*
 #ifdef GE_DEBUG

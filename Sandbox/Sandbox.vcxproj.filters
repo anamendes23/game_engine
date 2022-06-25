@@ -16,9 +16,4 @@
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="vendor\glm\glm">
-      <Filter>vendor\glm</Filter>
-    </None>
-  </ItemGroup>
 </Project>
